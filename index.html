@@ -5,10 +5,10 @@
 <body>
 <div id="terminal"></div>
 <script>
-var t({
+var t = new Class(
   dom: document.getElementById('terminal'), // required
   speed: 15 // chars per second
-});
+};
 t.run(function (o) {
   o.output('Ну, приветик!Я - Персик!').wait(300);
   o.del(3).output('oz. ').wait(1000);
